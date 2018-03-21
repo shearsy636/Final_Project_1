@@ -38,7 +38,12 @@ body {
 }
 p {
   display: inline-block;
-  width: 500px;
+  width: 550px;
+  line-height: 1.6;
+}
+footer {
+  font-size: 12px;
+  padding-top: 50px;
 }
 .instagram {
   display: inline-block;
@@ -68,11 +73,10 @@ p {
   float: right;*/
     padding-right: 50px;
 }
-#bio_image{
-  height:508px;
-  width: 351px;
-  padding: 50px 20px 0 20px;
+.bio_image{
+  padding: 0 20px 0 20px;
   display: inline-block;
+  float: left;
 }
 ./*homePageImages {
   display: flex;
@@ -86,8 +90,21 @@ p {
   width: 640px;
   display: inline-block;
 }*/
-.painting_grid img{
-  height: 500px;
-  width: 500px;
-
+.painting_grid{
+ display: flex;
+}
+.statement {
+  display: inline-block;
+  float: left;
+  padding-top: 20px;
+}
+.education {
+  padding-top: 30px;
+}
+.clearfix::after { 
+  content: "."; 
+  visibility: hidden; 
+  display: block; 
+  height: 0;
+  clear: both; 
 }
