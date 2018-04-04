@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 header {
   display: inline-block;
   height:150px;
@@ -9,7 +14,7 @@ nav {
   float: right;
   padding-top: 30px;
   padding-right: 15px;
-  color: white;
+  color: #fff;
 }
 .nav {
   text-transform: uppercase;
@@ -32,7 +37,7 @@ a{
   color: black;
 }
 body {
-  padding: 0 15px 15px 15px;
+  padding: 0 0 15px 0;
   position: relative;
   font-family: 'Montserrat', sans-serif;
 }
@@ -40,6 +45,9 @@ p {
   display: inline-block;
   width: 550px;
   line-height: 1.6;
+}
+img {
+  width: 100%;
 }
 footer {
   font-size: 12px;
@@ -51,48 +59,53 @@ footer {
   padding: 10px;
   margin: 10px 15px 0 0;
 }
+.homepageImages {
+  display: flex;
+  flex-wrap: wrap;
+}
 
 #ladder {
-  height: 640px;
-  width: 640px;
-  /*display: inline-block;
-  float: left;*/
+  width: 40%;
+  padding: 10px;
+  margin: auto;
 }
+
 #Towels {
-  height: 317px;
-  width: 400px;
-  /*display: inline-block;
-  float: right;*/
-  padding-right: 20px;
-  padding-bottom: 25px;
+  width: 40%;
+  padding: 10px;
+  margin: auto;
 }
+
 #poolBall {
-  height: 320px;
-  width: 320px;
-  /*display: inline-block;
-  float: right;*/
-    padding-right: 50px;
+  width: 25%;
+  padding: 15px;
+  margin: auto;
 }
 .bio_image{
+  width: 40%;
   padding: 0 20px 0 20px;
   display: inline-block;
   float: left;
 }
-./*homePageImages {
+.grid {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  position: absolute;
-}*/
-/*
-.homePageImages img{ 
-  height: 640px;
-  width: 640px;
-  display: inline-block;
-}*/
-.painting_grid{
- display: flex;
+  justify-content: center;
+  align-items: center;
 }
+.painting_grid{
+  width: 25%;
+  float:right;
+  padding: 15px;
+  margin: auto;
+}
+.drawings_grid{
+  width: 25%;
+  float:right;
+  padding: 15px;
+  margin: auto;
+}
+
 .statement {
   display: inline-block;
   float: left;
@@ -107,4 +120,32 @@ footer {
   display: block; 
   height: 0;
   clear: both; 
+}
+.head {
+  position: fixed;
+  height:175px;
+  width: 100%;
+  background-color: #fff;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
 }
